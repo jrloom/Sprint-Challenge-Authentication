@@ -17,9 +17,13 @@ const Users = () => {
 
   return (
     <div>
-      <ul>
+      <ul className="jokes">
         {jokes.map(joke => {
-          return <li key={joke.id}>{joke.joke}</li>;
+          return (
+            <li key={joke.id} className="joke">
+              {joke.joke}
+            </li>
+          );
         })}
       </ul>
     </div>
